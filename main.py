@@ -17,6 +17,10 @@ app = FastAPI()
 class TextRequest(BaseModel):
     originText: str
 
+@app.get("/")
+async def greetings():
+    return "Hello World!"
+
 @app.post("/split")
 async def split_text_get(request: Request):
     body = await request.json()
