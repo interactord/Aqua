@@ -4,9 +4,7 @@
 # from typing import List
 # from wtpsplit import SaT
 
-# os.environ["TOKENIZERS_PARALLELISM"] = "true"
 
-# model_ort = SaT("sat-3l-sm", ort_providers=["CPUExecutionProvider"])
 
 # def split_text(text: str) -> List[str]:
 #     result = list(model_ort.split(text))
